@@ -37,12 +37,13 @@ The repository contains the complete comparison pipeline on **BACH** and **BRACS
 | `train_tan_bracs_save.py`, `make_tan_figure.py` | train and save one TAN; stage visualization, background-invariance and batch-padding tests |
 
 ## Setup
+## Setup
 
 ```bash
-conda create -n tan python=3.<x> && conda activate tan
-pip install torch torchvision torch_geometric timm scikit-learn scikit-image scipy numpy pandas matplotlib pillow networkx
+conda create -n tan python=3.9 && conda activate tan
+pip install -r requirements.txt
 ```
-Tested with: `<Python x.y, PyTorch x.y, CUDA x.y>` on a single NVIDIA RTX 5090 (32 GB) with 61 GB RAM. The graph pickles are large (several GB for BACH, more for BRACS); plan for at least 48 GB RAM. Please add the exact package versions (for example from `pip freeze`).
+`requirements.txt` is a frozen snapshot of the environment the experiments were run in: Python 3.9.25, PyTorch 2.8.0 (CUDA 12.8), torchvision 0.23.0, PyTorch Geometric 2.6.1, timm 1.0.29, on a single NVIDIA RTX 5090 (32 GB) with 61 GB RAM. The graph pickles are large (several GB for BACH, more for BRACS); plan for at least 48 GB RAM.
 
 ## Data and pretrained weights (not included)
 
