@@ -37,7 +37,6 @@ The repository contains the complete comparison pipeline on **BACH** and **BRACS
 | `train_tan_bracs_save.py`, `make_tan_figure.py` | train and save one TAN; stage visualization, background-invariance and batch-padding tests |
 
 ## Setup
-## Setup
 
 ```bash
 conda create -n tan python=3.9 && conda activate tan
